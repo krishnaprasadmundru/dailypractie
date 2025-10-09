@@ -1,10 +1,9 @@
-// src/store.js
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "./counterSlice";
+import signupReducer from "./signupSlice";
 
 const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    signup: signupReducer,
   },
 });
 
