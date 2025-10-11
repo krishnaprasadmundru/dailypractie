@@ -5,12 +5,12 @@ import { login, logout } from "./authSlice";
 function App() {
   const dispatch = useDispatch();
   const auth = useSelector((state) => state.auth);
-  const isLoggedIn = auth?.isLoggedIn || false;
+  const IsLoggedIn = auth?.IsLoggedIn || false;
   const username = auth?.username || "";
 
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
-      {isLoggedIn ? (
+      {IsLoggedIn ? (
         <>
           <h2>Welcome, {username} </h2>
           <button onClick={() => dispatch(logout())}>Logout</button>
